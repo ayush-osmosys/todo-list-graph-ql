@@ -8,15 +8,4 @@ const pool = new Pool({
   database: process.env.PGDATABASE,
 });
 
-const tasks = [
-  {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
-  },
-];
-
 module.exports = pool;
