@@ -4,7 +4,7 @@ const { expressMiddleware } = require("@apollo/server/express4");
 const schema = require("./model/schema");
 const bodyParser = require("body-parser");
 require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
   const server = new ApolloServer({
