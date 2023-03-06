@@ -32,4 +32,4 @@ npm run dev
 
 The express server will start on *PORT* 5000 or as specified by you in .env
 
-Based on *task* resource, you can check out the documentation once you open <http://localhost:*PORT>* om apollo server
+Based on *task* resource, you can check out the documentation once you open <http://localhost:5000> on apollo server
