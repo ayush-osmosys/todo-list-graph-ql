@@ -11,8 +11,7 @@ const startServer = async () => {
     schema,
   });
   await server.start();
-  app.use(task);
-  app.use("/graphql", expressMiddleware(server));
+  app.use("/", expressMiddleware(server));
 };
 const app = express();
 app.use(bodyParser.json());
