@@ -3,9 +3,7 @@ const { ApolloServer } = require("@apollo/server");
 const { expressMiddleware } = require("@apollo/server/express4");
 const schema = require("./model/schema");
 const bodyParser = require("body-parser");
-// const cors = require("cors");
 require("dotenv").config();
-const task = require("./routes/task");
 const PORT = process.env.PORT;
 
 const startServer = async () => {
@@ -19,6 +17,5 @@ const startServer = async () => {
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(cors);
 app.listen(PORT, () => console.log("Server started at port " + PORT));
 startServer();
