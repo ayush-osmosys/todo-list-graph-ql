@@ -25,7 +25,7 @@ make sure that your PostgreSQL database is up and running and it has the table n
 
 ```bash
 git clone https://github.com/ayush-osmosys/todo-list-graphql
-cd todo-list-graphql
+cd todo-list-graphql-backend
 npm i
 npm run dev
 ```
